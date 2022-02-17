@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Números</title>
+    <link rel="stylesheet" href="model.css">
+</head>
+<body>
+    <header>
+        <h1> Média do aluno </h1>
+    </header>
+    <section>
+      Nota 1:  <input type="number" name="txtn1" id="txtn1">
+    </section>
+    <section>
+       Nota 2: <input type="number"name='txtn2'id='txtn2'> 
+    </section>
+    <section>
+        Nota 3: <input type="number"name='txtn2'id='txtn3'> 
+    </section>
+    <footer>
+        <input type="button" value="Calcular Média" onclick="média()">    
+        <div id="res">Resultado</div>
+    </footer>
+    <script>
+        function média() {
+            var tn1 = document.getElementById('txtn1')
+            var tn2 = document.querySelector('input#txtn2')
+            var tn3 = document.getElementById('txtn3')
+            var res = document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var n3 = Number(tn3.value)
+            var s = (n1+n2+n3)/3
+                if (s < 5) {
+                res.innerHTML +=`<p>A sua média foi ${s}. Você está <strong>REPROVADO<strong><p>`
+            }
+            else if (s >= 5) {
+                res.innerHTML +=`<p>A sua média foi ${s}. Você está <strong>APROVADO<strogn><p>`
+            }
+        }
+        
+    </script>
+</body>
+</html>

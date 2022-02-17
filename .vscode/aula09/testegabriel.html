@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+var nome=window.prompt ('Qual seu nome?')
+var idade= window.prompt ('Qual a sua idade?')
+var altura= window.prompt ('Qual a sua altura?')
+var peso= window.prompt ('Qual o seu peso?')
+var idd= idade >= 18? 'pode' : 'nao pode'
+var alt= altura >= 1.70? 'pode': 'nao pode'
+var ps= peso >= 80? 'nao pode': 'pode'
+var med= idd && alt && ps == 'pode'? 'autorizado' : 'nao autorizado'
+document.write (`Olá, ${nome},com base nos seus dados você está ${med} a tomar o medicamento solicitado!`)
+    </script>
+</body>
+</html>

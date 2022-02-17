@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuso Horário</title>
+    <link rel="stylesheet" href="fuso.css">
+</head>
+<body>
+    <header>
+        <div id='titulo'>
+            <h1 id="saudacao">Olá!</h1>
+        </div>
+    </header>
+    <section>
+        <div > 
+           <p>
+               <input type="radio" name="radp" id="br" checked>
+               <label for="br">Brasil</label>
+               <input type="radio" name="radp" id="pt">
+               <label for="pt">Portugal</label>
+               <input type="radio" name="radp" id="jp">
+               <label for="jp">Japão</label>
+               <input type="radio" name="radp" id="eua">
+               <label for="eua">EUA</label>
+               <input type="radio" name="radp" id="ch">
+               <label for="ch">China</label>
+               <input type="button" value="verificar" onclick="verificar()">
+                        </p>
+        </div>
+        <div id="res">
+            Selecione um país acima...
+        </div>
+        <div id="foto">
+            <img id="imagem" src="brasil.png" alt="Foto do dia">
+
+        </div>      
+    </section>
+    <footer>
+        <p>&copy; FusoLTDA</p>
+    </footer>
+    <script src="fuso.js">
+        
+    </script>
+</body>
+</html>

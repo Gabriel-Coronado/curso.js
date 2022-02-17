@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+       body {
+           background-color: black;
+           color: white;
+                  }
+    </style>
+</head>
+<h1>Brasileiro ou Estrangeiro?</h1>
+Digite o País: <input type="string" name="txtpais" id="pais" >
+<input type="button" value="verificar" onclick="verificar()">
+<div id="res">
+    
+</div>
+<body>
+    <script>
+        function verificar() {
+            var p = document.getElementById('pais')
+            var ver = String (p.value)
+            if (ver == 'Brasil') {
+                res.innerHTML= '<p>Você é <strong>brasileiro!<strong><p>'
+                    p.style.background = 'green'
+                    p.style.color = 'yellow'
+                    res.style.background = 'green'
+                    res.style.color = 'yellow'
+            }
+            else if (ver == 'Argentina') {
+                res.innerHTML='<p>Você é <strong>Argentino!<strong><p>'
+                    p.style.background = 'turquoise'
+                    p.style.color = 'white'
+                    res.style.background = 'turquoise'
+                    res.style.color = 'white'
+            }
+            else if (ver == 'EUA'){
+                res.innerHTML = '<p>Você é <strong>Americano<strong><p>'
+                    p.style.background = 'blue'
+                    p.style.color = 'white'
+                    res.style.background = 'tomato'
+                    res.style.color = 'white'
+            }
+        }
+    </script>
+    
+</body>
+</html>
