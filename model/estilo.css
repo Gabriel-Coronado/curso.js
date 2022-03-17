@@ -1,21 +1,31 @@
 body{
-    background-color: aqua;
+    background-color: whitesmoke;
     font: normal 15pt arial;
 
 }
 
 header {
-    color: white;
+    color: rgba(67, 122, 224, 0.836);
 text-align: center;
-text-shadow: 5px 5px 9px rgba(0, 0, 0, 0.637);
 }
 section {
 background-color: white;
 border-radius: 10px;
-padding: 15px;
+padding: 25px;
 width: 500px;
 margin:auto;
 box-shadow:5px 5px 15px rgba(0, 0, 0, 0.548);
+}
+.log{
+    
+    margin: 10px;
+    font-size: 1em;
+    width: 99%;
+    height: 90%;
+}
+.log:hover{
+    box-shadow:0px 0px 12px rgba(0, 81, 255, 0.418);
+
 }
 
 footer {
