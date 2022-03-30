@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #text{
+            font-size: 2em;
+        }
+        .oi{
+            color:white;
+        }
+        .blue{
+            color: blue;
+        }
+        .red{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p id="text" class="oi">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa mollitia amet pariatur natus cumque. </p>
+
+    <script>
+        const texto = document.getElementById('text')
+
+        texto.classList.add('blue')
+        texto.classList.remove('oi')
+        texto.classList.remove('blue')
+        texto.classList.add('red')
+        if(texto.classList.contains('red')){
+            alert('Elemento contem classe red')
+        }
+
+    </script>
+</body>
+</html>
