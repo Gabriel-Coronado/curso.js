@@ -19,16 +19,23 @@
     <script>
         const tag = document.getElementsByTagName('div')
         const container = document.getElementById('container')
+       
         const br = document.createElement('img')
         const pt = document.createElement('img')
         const title = document.createElement('h1')
         const title2 = document.createElement('h1')
+        const par = document.createElement('p')
+        
         title.innerHTML = 'Brasil'
         title2.innerHTML = 'Portugal'
+        
+        par.innerHTML = 'OLA'
+        
         pt.src = './portugal.png'
         br.src = './brasil.png'
 
         container.style.color = 'green'
+       
         tag[0].style.backgroundColor = 'yellow'
         tag[0].style.width = '200px'
         tag[2].style.color = 'red'
@@ -37,10 +44,9 @@
         tag[2].appendChild(title2)
         tag[1].appendChild(br)
         tag[3].appendChild(pt)
-
-
-
-       //container[0].removeChild(title)
+        tag[2].appendChild(par)
+        
+       // tag[2].removeChild(title2)
 
     </script>
 </body>
