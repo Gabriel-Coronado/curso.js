@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="container"></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div>ola</div>
+    <div>ola</div>
+    <div>ola</div>
+
+    <script>
+        const tag = document.getElementsByTagName('div')
+        const container = document.getElementById('container')
+        const br = document.createElement('img')
+        const pt = document.createElement('img')
+        const title = document.createElement('h1')
+        const title2 = document.createElement('h1')
+        title.innerHTML = 'Brasil'
+        title2.innerHTML = 'Portugal'
+        pt.src = './portugal.png'
+        br.src = './brasil.png'
+
+        container.style.color = 'green'
+        tag[0].style.backgroundColor = 'yellow'
+        tag[0].style.width = '200px'
+        tag[2].style.color = 'red'
+
+        tag[0].appendChild(title)
+        tag[2].appendChild(title2)
+        tag[1].appendChild(br)
+        tag[3].appendChild(pt)
+
+
+
+       //container[0].removeChild(title)
+
+    </script>
+</body>
+</html>

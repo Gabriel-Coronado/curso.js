@@ -7,15 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa mollitia amet pariatur natus cumque. </p>
-    <span class="text">olá</span>
-    <h5 class="text">hello</h5>
+    
 
     <script>
-        const element = document.querySelector('.text')
-        const elements = document.querySelectorAll('.text')
-        console.log(elements[1]) 
-        console.log(element)
+        const div = document.createElement('div')
+        div.innerHTML = 'olá'
+        
+
+        console.log(div)
     </script>
 </body>
 </html>
