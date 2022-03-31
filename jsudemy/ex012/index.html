@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form">
+        <label>Insira sua idade:</label><br>
+        <input type="number" placeholder="inserir" id="age">
+        <br><br>
+    <button type="submit">Enviar</button>
+    <br><br>
+    <button id="btn">Diga oi</button>
+    </form>
+    
+    <script>
+        btn.addEventListener('click', function(){
+            alert('Oi :)')
+        })
+
+        const form = document.getElementById('form')
+
+        form.addEventListener('submit', enviar)
+
+        function enviar(e){
+            e.preventDefault()
+
+            const idade = document.getElementById('age')
+
+            if(idade.value < 18){
+                alert('Menor')
+            } else{
+                alert('Maior')
+            }
+        }
+       
+    </script>
+
+
+</body>
+</html>
