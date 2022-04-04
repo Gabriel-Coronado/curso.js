@@ -17,5 +17,23 @@ h2{
 img{
   border-radius: 100% ;
 }
+input{
+  background-color: rgba(51, 51, 51, 0.773);
+  color: rgb(150, 150, 16);
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px black;
+}
+button{
+  background-color: rgba(51, 51, 51, 0.773);
+  color: rgb(150, 150, 16);
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px black;
+}
+button:hover{
+  background-color: rgb(150, 150, 16);
+  color: rgba(51, 51, 51, 0.773);
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px black;
 
+}
 
