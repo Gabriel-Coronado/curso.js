@@ -7,7 +7,7 @@ function Eventos(){
     }
 
     function segundoEvento(){
-        console.log('Ativando segundo evento')
+        console.log('Ativando segundo evento')      
     }
      
     return(
