@@ -7,8 +7,18 @@ import List from './components/List';
 import Eventos from './components/Eventos';
 import Form from './components/Form';
 import Condicional from './components/Condicional';
+import ListRend from './components/ListRend';
+import SeuNome from './components/SeuNome';
+import {useState} from 'react'
+import Saudacao from './components/Saudacao';
+
 function App() {
   const nome = 'Maria'
+
+  const meusItens = ['React','Vue','Angular']
+
+  const [name, setName] = useState()
+
   return (
     <div className="App">
       <h1>Testando CSS</h1>
@@ -28,6 +38,13 @@ function App() {
     <h1>Renderização Condicional</h1>
     <Condicional/>
 
+    <h1>Renderização de Listas</h1>
+    <ListRend itens={meusItens}/>
+    <ListRend itens={[]}/>
+
+    <h1>State Lift</h1>
+    <SeuNome setName={setName} />
+    <Saudacao name={name} />
     </div>
     
   );
