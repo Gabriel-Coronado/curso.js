@@ -9,8 +9,12 @@ import Form from './components/Form';
 import Condicional from './components/Condicional';
 import ListRend from './components/ListRend';
 import SeuNome from './components/SeuNome';
-import {useState} from 'react'
+import {useState} from 'react';
 import Saudacao from './components/Saudacao';
+import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
+import Empresa from './pages/Empresa';
+import Contato from './pages/Contato';
+import Home from './pages/Home';
 
 function App() {
   const nome = 'Maria'
@@ -20,6 +24,8 @@ function App() {
   const [name, setName] = useState()
 
   return (
+    
+
     <div className="App">
       <h1>Testando CSS</h1>
     <Frase/><br></br>
@@ -45,9 +51,31 @@ function App() {
     <h1>State Lift</h1>
     <SeuNome setName={setName} />
     <Saudacao name={name} />
-    </div>
+
+    <Router>
+    <ul>
+      <li><Link to='/'>Home</Link></li>
+      <li><Link to='/empresa'>Empresa</Link></li>
+      <li><Link to='/contato'>Contato</Link></li>
+    </ul>
+    <Switch>
+      <Route exact path='/'>
+        <Home/>
+      </Route>
+      <Route path='/empresa'>
+        <Empresa/>
+      </Route>
+      <Route path='/contato'>
+        <Contato/>
+      </Route>
+    </Switch>
+  </Router>
+
+    </div>   
     
-  );
+    
+  )
+  
 }
 
 export default App;
