@@ -2,7 +2,8 @@ function Empresa(){
     return(
         <div>
             <h1>Empresa</h1>
-            <p>Conteúdo da página.</p>
+            <h2>React</h2>
+            <img url="logo192.png" alt="Empresa"/>
         </div>
     )
 }

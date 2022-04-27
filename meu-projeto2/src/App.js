@@ -15,6 +15,8 @@ import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 import Empresa from './pages/Empresa';
 import Contato from './pages/Contato';
 import Home from './pages/Home';
+import Navbar from './components/Layout/Navbar';
+import Footer from './components/Layout/Footer';
 
 function App() {
   const nome = 'Maria'
@@ -36,7 +38,7 @@ function App() {
     <List/>
    
 
-    <h1>Testando Eventos</h1>
+    <h1>Testando Eventos</h1><br></br>
     <Eventos />
     <Form/>
 
@@ -49,15 +51,11 @@ function App() {
     <ListRend itens={[]}/>
 
     <h1>State Lift</h1>
-    <SeuNome setName={setName} />
-    <Saudacao name={name} />
+    <SeuNome setName={setName} /><br></br>
+    <Saudacao name={name} /><br></br>
 
     <Router>
-    <ul>
-      <li><Link to='/'>Home</Link></li>
-      <li><Link to='/empresa'>Empresa</Link></li>
-      <li><Link to='/contato'>Contato</Link></li>
-    </ul>
+    <Navbar/>
     <Switch>
       <Route exact path='/'>
         <Home/>
@@ -69,8 +67,9 @@ function App() {
         <Contato/>
       </Route>
     </Switch>
+    <Footer/>
   </Router>
-
+  
     </div>   
     
     

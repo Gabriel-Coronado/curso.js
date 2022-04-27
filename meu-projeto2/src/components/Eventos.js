@@ -12,7 +12,7 @@ function Eventos(){
      
     return(
         <>
-        <p>Clique aqui:</p> 
+        <p>Clique aqui:</p> <br></br>
         <Button event={meuEvento} text='Primeiro evento'/><br></br><br></br>
         <Button event={segundoEvento} text='Segundo evento'/>
         </>
